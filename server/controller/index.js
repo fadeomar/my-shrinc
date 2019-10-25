@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.send('hi from the server');
+  res.json('hi from the server');
 };
