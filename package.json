@@ -2,13 +2,15 @@
   "name": "shrinc",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "## **Team Members** * Abdallah Ammar (Team Lead) * Hashem Taha  * Fadi Omar  * Mohammad Alhallaq * Asmaa Thabet",
+  "description": "## **Team Members** *  Fadi Omar  *",
   "scripts": {
+    "start:server": "NODE_ENV=development nodemon server",
+    "start:client": "cd client && npm run start",
+    "dev": "NODE_ENV=development  concurrently  \"npm run start:server\" \"npm run start:client\"",
     "test": "NODE_ENV=test node test | tap-spec",
     "lint": "eslint server",
     "lint:react": "cd client/ && npm run lint",
-    "start": "NODE_ENV=production node ./server",
-    "dev": "NODE_ENV=development nodemon ./server"
+    "start": "NODE_ENV=production node ./server"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
+    "concurrently": "^5.0.0",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
