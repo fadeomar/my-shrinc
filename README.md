@@ -1,11 +1,10 @@
 # Shrinc
 
+This branch is for my amendments to the project
+
+
 ## **Team Members**
-* Abdallah Ammar (Team Lead)
-* Hashem Taha 
 * Fadi Omar 
-* Mohammad Alhallaq
-* Asmaa Thabet
 
 ## **Table of Contents** 
 * [Problem](#problem)
