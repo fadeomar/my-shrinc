@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from '../pages/Home/home';
 
 import './style.css';
 
@@ -19,8 +21,13 @@ class App extends Component {
   };
 
   render() {
-    const { x } = this.state;
-    return <div className="App">{x}</div>;
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
+    );
   }
 }
 
