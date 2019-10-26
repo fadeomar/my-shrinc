@@ -5,20 +5,11 @@ import Home from '../pages/Home/home';
 import './style.css';
 
 class App extends Component {
-  state = {
-    x: '',
-  };
+  state = {};
 
   componentDidMount() {
     this.getdata();
   }
-
-  getdata = () => {
-    fetch('api/v1')
-      .then(res => res.json())
-      .then(res => this.setState({ x: res }))
-      .catch(console.log);
-  };
 
   render() {
     return (
