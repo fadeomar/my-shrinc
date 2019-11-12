@@ -1,5 +1,5 @@
 // exports.signup = require('./signup');
-// exports.intialResult = require('./intialResult');
+exports.initialResult = require('./initialResult');
 // exports.filter = require('./filter');
-// exports.profile = require('./profile');
+exports.profile = require('./profile');
 exports.cities = require('./cities');

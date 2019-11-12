@@ -1,13 +1,15 @@
 const express = require('express');
-const { clientError, cities } = require('../controllers');
+const {
+  clientError, cities, initialResult, profile,
+} = require('../controllers');
 
 const router = express.Router();
 
-// router.post('/signup', signup);
-// router.get('/intial', intialResult);
-// router.post('/filter', filter);
-// router.get('/profile/:id', profile);
+router.get('/profile/:id', profile);
 router.get('/cities', cities);
+router.get('/initial', initialResult);
+// router.post('/signup', signup);
+// router.post('/filter', filter);
 
 router.use(clientError);
 
