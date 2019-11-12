@@ -7,10 +7,6 @@ import './style.css';
 class App extends Component {
   state = {};
 
-  componentDidMount() {
-    this.getdata();
-  }
-
   render() {
     return (
       <BrowserRouter>

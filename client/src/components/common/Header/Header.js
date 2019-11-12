@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, MenuLogo, menuTopLogo } from '../../assets';
@@ -28,7 +27,7 @@ class Header extends Component {
       <div>
         <div className="header">
           <div className="header_befor-click">
-            <div className="menu-icon" onClick={this.onclick}>
+            <div className="menu-icon" onClick={this.onclick} role="button">
               <Menu />
             </div>
             <Link to="home">
@@ -40,9 +39,14 @@ class Header extends Component {
             className={blurred ? 'menu-model' : ''}
             onClick={this.onclickForModel}
             id="model"
+            role="button"
           >
             <nav className={`menu_nav-container ${isClosed ? 'hide' : ''}`}>
-              <div className="menu_nav-header" onClick={this.onclick}>
+              <div
+                className="menu_nav-header"
+                onClick={this.onclick}
+                role="button"
+              >
                 <h2 className="menu-title">Menu</h2>
               </div>
               <ul className="menu-list">
