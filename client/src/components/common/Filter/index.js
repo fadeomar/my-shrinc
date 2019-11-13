@@ -3,7 +3,7 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import { Select, Form, Button, Switch, notification } from 'antd';
 
-import Loader from '../index';
+import Loader from '../Loader';
 import { types, ranges } from './staticData';
 import './style.css';
 
