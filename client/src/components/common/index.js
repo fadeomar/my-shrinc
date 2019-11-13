@@ -5,6 +5,7 @@ import Card from './Card';
 import Questionnaire from './Questionnaire';
 import FilterComponent from './Filter';
 import availabilityTable from './availabilityTable';
+import FilterResult from './FilterResult';
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   Card,
   FilterComponent,
   availabilityTable,
+  FilterResult,
 };
