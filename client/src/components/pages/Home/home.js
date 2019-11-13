@@ -25,16 +25,19 @@ class Home extends Component {
         <div className="Btn-container">
           <Button
             className="questionary big-green-btn"
-            text="&nbsp;&nbsp;&nbsp;Find the Right Therapy for You"
             onClick={() => this.goTo('questionary')}
-            Icon={QuestionaryIcon}
-          />
+          >
+            <QuestionaryIcon />
+            &nbsp;&nbsp;&nbsp;Find the Right Therapy for You
+          </Button>
+
           <Button
             className="find big-green-btn"
-            text="&nbsp;&nbsp;&nbsp;Search for Therapists"
             onClick={() => this.goTo('search')}
-            Icon={FindIcon}
-          />
+          >
+            <FindIcon />
+            &nbsp;&nbsp;&nbsp;Search for Therapists
+          </Button>
         </div>
         <SignUpLink />
       </div>
