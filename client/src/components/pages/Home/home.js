@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import LogoContainer from './logo-container/logo-container';
-import Button from '../../common/button/Button';
-import Header from '../../common';
+import { Header, Button } from '../../common';
 import SignUpLink from './logo-container/sign-up-link';
 import { QuestionaryIcon, FindIcon } from '../../assets';
 import './Home.css';
