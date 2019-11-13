@@ -6,7 +6,7 @@ import './style.css'; // useless
 import { Form, Steps, Button, message } from 'antd';
 import Question from './Question';
 import options from './staticData';
-// import rateHighestTypeTherapy from '../../../utils';
+import rateHighestTypeTherapy from '../../../utils';
 
 const { Step } = Steps;
 
@@ -41,8 +41,7 @@ class Questionnaire extends React.Component {
     } = this.props;
     e.preventDefault();
     const { value: answers } = this.state;
-    const resultPoints = answers;
-    // rateHighestTypeTherapy(answers);
+    const resultPoints = rateHighestTypeTherapy(answers);
     push({
       pathname: '/result',
       state: { resultPoints },
