@@ -1,0 +1,21 @@
+.Available_contailner {
+    margin: 1rem 0 0 2rem;
+  }
+  
+  .Availabile_table {
+    width: max-content;
+    border-radius: 1rem; 
+  }
+  
+  .Available_contailner .ant-table td, .ant-table th{
+    width: 6.7rem;
+    color: #32A48F
+  }
+  
+  @media (min-width: 768px) {
+    .Available_contailner .ant-table td, .ant-table th {
+      width: 15.7rem;
+      font-size: 1.4rem;
+    }
+  }
+  
