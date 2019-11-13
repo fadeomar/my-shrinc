@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import Button from '../../common';
+import { Button } from '../../common';
 
 import './style.css';
 
-const NotFound = '../../../assets/NotFound.png';
+const NotFound = './../../assets/NotFound.png';
 
 export default () => {
   return (

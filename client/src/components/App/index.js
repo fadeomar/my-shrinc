@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { Header } from '../common';
-import Home from '../pages/Home/home';
+import { Home, NotFound } from '../pages';
 
 import './style.css';
 
@@ -14,7 +14,8 @@ class App extends Component {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>
     );
