@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import LogoContainer from './logo-container/logo-container';
-import { Header, Button } from '../../common';
+import { Button } from '../../common';
 import SignUpLink from './logo-container/sign-up-link';
 import { QuestionaryIcon, FindIcon } from '../../assets';
 import './Home.css';
@@ -19,7 +19,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
         <LogoContainer />
         <div className="Btn-container">
           <Button
