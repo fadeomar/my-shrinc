@@ -6,7 +6,8 @@ import { Button } from '../../common';
 
 import './style.css';
 
-const NotFound = './../../assets/NotFound.png';
+const NotFound =
+  'https://raw.githubusercontent.com/GSG-G7/shrinc/master/client/src/assets/NotFound.png';
 
 export default () => {
   return (
