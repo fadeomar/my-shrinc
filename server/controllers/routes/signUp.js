@@ -6,7 +6,6 @@ const cloudinary = require('../../database/config/cloudinaryConnection');
 
 module.exports = async (req, res, next) => {
   try {
-    console.log(req.body);
     const therapist = JSON.parse(req.body.data);
     const therapistInfo = { ...therapist };
     const availability = JSON.parse(req.body.availability);
