@@ -20,7 +20,7 @@ const Card = ({ data }) => {
           fullName,
           priceRange,
           image,
-          approch,
+          approach,
           type,
           city,
         } = therapy.fields;
@@ -37,7 +37,7 @@ const Card = ({ data }) => {
               name={fullName}
               type={type}
               city={city}
-              approach={approch}
+              approach={approach}
               id={id}
             />
           </Panel>

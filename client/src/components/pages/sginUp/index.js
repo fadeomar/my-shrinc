@@ -14,7 +14,7 @@ import {
 import axios from 'axios';
 import Helmet from 'react-helmet';
 
-import { availabilityTable, Location, Loader } from '../../common';
+import { AvailabilityTable, Location, Loader } from '../../common';
 
 import staticData from './staticData';
 import './style.css';
@@ -130,11 +130,11 @@ class SignUpForm extends Component {
         data.remote = remote;
         const file = this.image.state.fileList[0].originFileObj;
         formData.append('data', JSON.stringify(data));
-        formData.append('avalibility', JSON.stringify(available));
+        formData.append('availability', JSON.stringify(available));
         formData.append('image', file);
         try {
           this.setState({ loading: true });
-          const res = await axios.post('/api/v1/signup', formData, {
+          const res = await axios.post('/api/v1/sign-up', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
@@ -340,25 +340,25 @@ class SignUpForm extends Component {
               </Select>
             )}
           </Form.Item>
-          <Form.Item label="Approch:">
-            {getFieldDecorator('approch', {
+          <Form.Item label="Approach:">
+            {getFieldDecorator('approach', {
               rules: [
                 {
-                  message: 'The approch is not valid!',
+                  message: 'The approach is not valid!',
                 },
                 {
                   required: true,
-                  message: 'Please input your approch!',
+                  message: 'Please input your approach!',
                 },
                 {
                   max: 200,
                   message: 'Maximum 200 characters',
                 },
               ],
-            })(<Input.TextArea placeholder="Enter your approch" />)}
+            })(<Input.TextArea placeholder="Enter your approach" />)}
           </Form.Item>
-          <Form.Item>
-            <availabilityTable onChange={this.onChange} />
+          <Form.Item label="availability Time :">
+            <AvailabilityTable onChange={this.onChange} />
           </Form.Item>
           <Form.Item label="Add Photo:">
             {getFieldDecorator('image', {
