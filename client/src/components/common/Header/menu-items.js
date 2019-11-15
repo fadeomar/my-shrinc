@@ -10,7 +10,7 @@ import {
 const menuData = [
   {
     label: 'Home',
-    url: 'home',
+    url: '/',
     icon: <HomeIcone />,
   },
   {
@@ -20,22 +20,22 @@ const menuData = [
   },
   {
     label: 'Glossary',
-    url: 'glossary',
+    url: '/glossary',
     icon: <TypesTherapist />,
   },
   {
     label: 'Questionarie',
-    url: 'questionarie',
+    url: '/questionarie',
     icon: <Questionnaire />,
   },
   {
     label: 'Search',
-    url: 'search',
+    url: '/filter',
     icon: <Search />,
   },
   {
     label: 'About',
-    url: 'about',
+    url: '/about',
     icon: <About />,
   },
 ];
