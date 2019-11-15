@@ -258,6 +258,10 @@ class SignUpForm extends Component {
                 <Option value="PD">Psyhcodynamic therapy</Option>
                 <Option value="Hu">Humanistic psychotherapy</Option>
                 <Option value="In">Integrative psychotherapy</Option>
+                <Option value="C">Counselling</Option>
+                <Option value="STPD">
+                  Short Term Psychodynamic Psychotherapy
+                </Option>
               </Select>
             )}
           </Form.Item>
