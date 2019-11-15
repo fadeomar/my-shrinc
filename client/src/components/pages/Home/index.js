@@ -31,7 +31,7 @@ class Home extends Component {
 
           <Button
             className="find big-green-btn"
-            onClick={() => this.goTo('search')}
+            onClick={() => this.goTo('/filter')}
           >
             <FindIcon />
             &nbsp;&nbsp;&nbsp;Search for Therapists

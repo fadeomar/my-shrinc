@@ -30,7 +30,7 @@ class Header extends Component {
             <div className="menu-icon" onClick={this.onclick} role="button">
               <Menu />
             </div>
-            <Link to="home">
+            <Link to="/">
               <img src={menuTopLogo} alt="menu logo" />
             </Link>
           </div>

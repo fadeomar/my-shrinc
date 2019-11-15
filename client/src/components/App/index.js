@@ -4,7 +4,15 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Header } from '../common';
 import 'antd/dist/antd.css';
 
-import { Home, NotFound, Glossary, About, TherapyType, SignUp } from '../pages';
+import {
+  Home,
+  NotFound,
+  Glossary,
+  About,
+  TherapyType,
+  SignUp,
+  Filter,
+} from '../pages';
 
 import './style.css';
 
@@ -21,6 +29,8 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/types-of-therapist" component={TherapyType} />
           <Route path="/sign-up" component={SignUp} />
+          <Route path="/filter" component={Filter} />
+
           <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>
