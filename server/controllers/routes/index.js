@@ -1,4 +1,4 @@
-// exports.signup = require('./signup');
+exports.signup = require('./signUp');
 exports.initialResult = require('./initialResult');
 // exports.filter = require('./filter');
 exports.profile = require('./profile');

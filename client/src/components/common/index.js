@@ -4,8 +4,8 @@ import Loader from './Loader';
 import Card from './Card';
 import Questionnaire from './Questionnaire';
 import FilterComponent from './Filter';
-import availabilityTable from './availabilityTable';
-import availabilityTime from './availabilityTime';
+import AvailabilityTable from './availabilityTable';
+import AvailabilityTime from './availabilityTime';
 import FilterResult from './FilterResult';
 import Location from './Location';
 
@@ -16,8 +16,8 @@ export {
   Questionnaire,
   Card,
   FilterComponent,
-  availabilityTable,
-  availabilityTime,
+  AvailabilityTable,
+  AvailabilityTime,
   FilterResult,
   Location,
 };

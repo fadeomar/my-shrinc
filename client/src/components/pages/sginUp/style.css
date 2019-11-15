@@ -1,0 +1,61 @@
+.signup-page {
+    margin: .5rem;
+}
+
+.signup-page__title {
+    color: #32A48F;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signup-page__form {
+    margin: 0.5rem;
+}
+
+.signup-page__button {
+    display: block;
+    margin: 0 auto;
+    background-color: #32A48F;
+    width: 19rem;
+    border-radius: 3px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+  
+.ant-time-picker-input {
+    font-size: 11px !important;
+}
+  
+.ant-table-wrapper {
+    width: 100% !important;
+}
+  
+.ant-time-picker {
+    width: 95px !important;
+}
+  
+.ant-time-picker-input {
+    padding: 4px 2px;
+}
+  
+.ant-time-picker-icon {
+    right: 6px;
+}
+  
+.ant-table-row, tr {
+    width: 94%;
+}
+  
+.signup_loader {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    z-index: 2;
+}
+  
+@media only screen and (min-width: 768px) { 
+    tr > td, tr > th {
+        width:200px !important;
+    }
+}
