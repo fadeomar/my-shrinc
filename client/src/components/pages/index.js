@@ -4,5 +4,6 @@ import Glossary from './Glossary';
 import About from './About';
 import TherapyType from './TherapyType';
 import SignUp from './sginUp';
+import Filter from './Filter';
 
-export { Home, NotFound, Glossary, About, TherapyType, SignUp };
+export { Home, NotFound, Glossary, About, TherapyType, SignUp, Filter };
