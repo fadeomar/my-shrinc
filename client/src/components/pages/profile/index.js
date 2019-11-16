@@ -119,12 +119,12 @@ class Profile extends Component {
             </h4>
             <p>{email}</p>
             {skype && (
-              <React.Fragment>
+              <div>
                 <h4>
                   <span aria-hidden>-</span> Skype
                 </h4>
                 <p>{skype}</p>
-              </React.Fragment>
+              </div>
             )}
           </div>
         </section>
