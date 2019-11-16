@@ -12,6 +12,7 @@ import {
   TherapyType,
   SignUp,
   Filter,
+  Profile,
 } from '../pages';
 
 import './style.css';
@@ -30,6 +31,7 @@ class App extends Component {
           <Route path="/types-of-therapist" component={TherapyType} />
           <Route path="/sign-up" component={SignUp} />
           <Route path="/filter" component={Filter} />
+          <Route path="/Profile/:id" component={Profile} />
 
           <Route path="*" component={NotFound} />
         </Switch>
