@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { Header } from '../common';
+import { Header, Questionnaire } from '../common';
 import 'antd/dist/antd.css';
 
 import {
@@ -26,6 +26,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/asd" component={Questionnaire} />
           <Route path="/glossary" component={Glossary} />
           <Route path="/about" component={About} />
           <Route path="/types-of-therapist" component={TherapyType} />
