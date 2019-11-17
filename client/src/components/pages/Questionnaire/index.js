@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Questionnaire as Q } from '../../common';
+import './style.css';
 
 const Questionnaire = () => (
   <div className="questionary__container">
