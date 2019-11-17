@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { Header, Questionnaire } from '../common';
+import { Header } from '../common';
 import 'antd/dist/antd.css';
 
 import {
@@ -13,6 +13,7 @@ import {
   SignUp,
   Filter,
   Profile,
+  Questionnaire,
 } from '../pages';
 
 import './style.css';
@@ -26,7 +27,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/asd" component={Questionnaire} />
+          <Route exact path="/questionnaire" component={Questionnaire} />
           <Route path="/glossary" component={Glossary} />
           <Route path="/about" component={About} />
           <Route path="/types-of-therapist" component={TherapyType} />
