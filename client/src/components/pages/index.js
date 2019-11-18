@@ -6,6 +6,7 @@ import TherapyType from './TherapyType';
 import SignUp from './sginUp';
 import Filter from './Filter';
 import Profile from './profile';
+import Questionnaire from './Questionnaire';
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   SignUp,
   Filter,
   Profile,
+  Questionnaire,
 };

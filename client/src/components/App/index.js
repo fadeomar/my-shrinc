@@ -13,6 +13,7 @@ import {
   SignUp,
   Filter,
   Profile,
+  Questionnaire,
 } from '../pages';
 
 import './style.css';
@@ -26,6 +27,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/questionnaire" component={Questionnaire} />
           <Route path="/glossary" component={Glossary} />
           <Route path="/about" component={About} />
           <Route path="/types-of-therapist" component={TherapyType} />

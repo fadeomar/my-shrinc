@@ -24,8 +24,8 @@ const menuData = [
     icon: <TypesTherapist />,
   },
   {
-    label: 'Questionarie',
-    url: '/questionarie',
+    label: 'Questionnaire',
+    url: '/questionnaire',
     icon: <Questionnaire />,
   },
   {
