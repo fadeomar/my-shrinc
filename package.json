@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "airtable": "^0.7.2",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "cloudinary": "^1.17.0",
     "concurrently": "^5.0.0",
     "cookie-parser": "^1.4.4",
